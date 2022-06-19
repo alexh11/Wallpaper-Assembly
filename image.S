@@ -1,8 +1,5 @@
 .section .data
 
-pixel:
-    .int -1
-
 header:
     .ascii "BM"
 dummy_fields:
