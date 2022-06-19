@@ -30,10 +30,6 @@ palette:                            # dummy 0
     .int 0
 important_colors:                   # dummy 0
     .int 0
-testx:
-    .short 0
-testy:
-    .short 0
 
 .equ header_len, . - header
 .equ WIDTH,  1920
@@ -158,7 +154,7 @@ sqrt_scaled:
 
     movq %rax, %r8
     
-    ; algorithm (babylonian method repeated 20 times, unrolled)
+    # algorithm (babylonian method repeated 20 times, unrolled)
 
     movq %rax, %r9                  # copy current guess into r9
     movq $0, %rdx                   # prepare for division
